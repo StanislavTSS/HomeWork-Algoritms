@@ -1,0 +1,32 @@
+#include "stdio.h"
+
+int main() {
+	int N;
+	int K;
+	
+	printf("Enter a number N\n");
+	scanf_s("%d", &N);
+	//system("pause");
+	if (N > 1)
+	{
+		K = N - 1;
+		while (K > 1)
+		{
+			if(N%K == 0) {
+				printf("this number is not prime");
+				return;
+			}
+			else{
+				K = K - 1;
+			}
+
+		}
+		printf("this number is prime");
+		return;
+	}
+	else
+	{
+		printf("this number is not prime");
+		return;
+	}
+}
